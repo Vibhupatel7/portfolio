@@ -7,7 +7,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 export default defineConfig({
   plugins: [
     tanstackStart({
-      target: "vercel",
+      target: "static",
     }),
     react(),
     tailwindcss(),
