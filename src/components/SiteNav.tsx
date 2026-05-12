@@ -22,14 +22,14 @@ export function SiteNav() {
       </Link>
 
       {/* Bottom centered nav */}
-      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex items-center gap-1 rounded-full border border-border bg-background/80 backdrop-blur-md px-2 py-2 shadow-[var(--shadow-soft)]">
+      <nav className="fixed bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-50">
+        <div className="flex items-center gap-1 rounded-full border border-border bg-background/80 backdrop-blur-md px-2 py-2 shadow-[var(--shadow-soft)] overflow-x-auto whitespace-nowrap">
           {links.map((l) => (
             <Link
               key={l.to}
               to={l.to}
-              className="px-4 py-1.5 text-sm rounded-full text-muted-foreground hover:text-ink transition-colors"
-              activeProps={{ className: "px-4 py-1.5 text-sm rounded-full bg-ink text-primary-foreground" }}
+              className="px-3 py-1.5 text-xs sm:text-sm rounded-full text-muted-foreground hover:text-ink transition-colors whitespace-nowrap"
+              activeProps={{ className: "px-3 py-1.5 text-xs sm:text-sm rounded-full bg-ink text-primary-foreground whitespace-nowrap" }}
               activeOptions={{ exact: true }}
             >
               {l.label}
@@ -37,6 +37,8 @@ export function SiteNav() {
           ))}
         </div>
       </nav>
+
+
     </>
   );
 }

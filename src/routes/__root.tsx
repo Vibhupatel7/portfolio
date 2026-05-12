@@ -65,7 +65,11 @@ function RootComponent() {
   return (
     <div className="min-h-screen paper-bg">
       <SiteNav />
-      <Outlet />
+      {/* Prevent fixed bottom nav overlap on mobile/tablet */}
+      <div className="pb-24 sm:pb-32">
+        <Outlet />
+      </div>
     </div>
   );
 }
+
