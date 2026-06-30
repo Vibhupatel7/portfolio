@@ -16,7 +16,7 @@ export const Route = createFileRoute("/experience")({
 
 const roles = [
   {
-    period: "Nov 2024 — Present",
+    period: "Nov 2024 — March 2026",
     title: "Jr. Computer Scientist",
     company: "IRLP Lab, DAIICT Gandhinagar, India",
     points: [
@@ -28,7 +28,7 @@ const roles = [
     ],
   },
   {
-    period: "Jun 2024 — Nov 2024",
+    period: "May 2024 — Oct 2024",
     title: "AI/ML Engineer",
     company: "ThinkNovus Technologies Pvt. Ltd",
 
@@ -39,7 +39,7 @@ const roles = [
     ],
   },
   {
-    period: "Feb 2024 — May 2024",
+    period: "Jan 2024 — April 2024",
     title: "AI/ML Intern",
     company: "Nettyfy Technologies",
     points: [
