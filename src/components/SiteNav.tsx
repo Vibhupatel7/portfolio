@@ -51,8 +51,9 @@ export function SiteNav() {
         className="fixed top-6 right-2 sm:right-4 z-30 select-none font-display text-2xl sm:text-3xl font-semibold text-ink hover:text-gold transition-colors transition-[opacity,transform,visibility] duration-350 ease-[cubic-bezier(0.2,0.8,0.2,1)]"
         aria-label="Home"
       >
-        VP<span className="text-gold">.</span>
+        <img src="/src/assets/vibhuti-logo.png" alt="" className="h-auto w-[clamp(100px,8vw,180px)]" />
       </Link>
+
 
       {/* Bottom centered nav */}
       <nav className="fixed bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-50">
