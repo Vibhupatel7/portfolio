@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
+import vibhutiLogo from "@/assets/vibhuti-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -51,7 +52,7 @@ export function SiteNav() {
         className="fixed top-6 right-2 sm:right-4 z-30 select-none font-display text-2xl sm:text-3xl font-semibold text-ink hover:text-gold transition-colors transition-[opacity,transform,visibility] duration-350 ease-[cubic-bezier(0.2,0.8,0.2,1)]"
         aria-label="Home"
       >
-        <img src="/src/assets/vibhuti-logo.png" alt="" className="h-auto w-[clamp(100px,8vw,180px)]" />
+          <img src={vibhutiLogo} alt="Vibhuti Patel" className="h-auto w-[clamp(100px,8vw,180px)]" />
       </Link>
 
 
