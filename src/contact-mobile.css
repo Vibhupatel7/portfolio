@@ -12,9 +12,22 @@
     width: min(92vw, 420px);
     margin-left: auto;
     margin-right: auto;
+
+    /* Avoid any forced height/extra blank space */
+    height: auto !important;
+    min-height: unset !important;
+
     box-sizing: border-box;
-    padding-bottom: 110px;
+    padding-bottom: 0px !important;
   }
+
+  /* Reduce space between the card and the following "Keep flying." text */
+  main.mx-auto.min-h-screen.max-w-4xl.px-6.py-32 > p.mt-20.text-center.font-script.text-2xl.text-ink\/60 {
+    margin-top: 0px !important;
+    padding-top: 24px;
+  }
+
+
 
   /* Card row anchors */
   main.mx-auto.min-h-screen.max-w-4xl.px-6.py-32 > div.mt-16.grid.gap-px.bg-border.rounded-2xl.overflow-hidden > a {
