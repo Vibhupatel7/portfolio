@@ -10,9 +10,9 @@ const marqueeTags = [
 export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
-      { title: "Skills — Vibhuti Patel" },
+      { title: "Skills, Vibhuti Patel" },
       { name: "description", content: "Technical skills: Python, ML, Deep Learning, Data Visualization, Statistics." },
-      { property: "og:title", content: "Skills — Vibhuti Patel" },
+      { property: "og:title", content: "Skills, Vibhuti Patel" },
       { property: "og:description", content: "Python, Machine Learning, Deep Learning, Data Visualization & Statistics." },
     ],
   }),

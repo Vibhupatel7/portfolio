@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/experience")({
   head: () => ({
     meta: [
-      { title: "Experience — Vibhuti Patel" },
+      { title: "Experience, Vibhuti Patel" },
       { name: "description", content: "Work experience: DAIICT, Nettyfy Technologies, Datavizz." },
-      { property: "og:title", content: "Experience — Vibhuti Patel" },
+      { property: "og:title", content: "Experience, Vibhuti Patel" },
       { property: "og:description", content: "AI/ML roles at DAIICT, Nettyfy Technologies, and Datavizz." },
     ],
   }),
@@ -16,30 +16,30 @@ export const Route = createFileRoute("/experience")({
 
 const roles = [
   {
-    period: "Nov 2024 — March 2026",
+    period: "Nov 2024, March 2026",
     title: "Jr. Computer Scientist",
     company: "IRLP Lab, DAIICT Gandhinagar, India",
     points: [
       "Trained NLLB 3.3B model on 22 Indian language government and health datasets - NLP, LLMs.",
       "Enhanced text retrieval and translation accuracy across Gujarati, English, Bengali, and Kannada using Bi-Encoder, BM25, and ColBERT on MS MARCO and FIRE benchmarks - Finetuning LLMs.",
-      "Built hierarchical embeddings (clauses, sections, full documents) for legal Q&A, enabling semantic and referential query handling – RAG.",
+      "Built hierarchical embeddings (clauses, sections, full documents) for legal Q&A, enabling semantic and referential query handling for RAG.",
       "Developed and optimized Retrieval-Augmented Generation (RAG) chatbot architecture for Bhashini using LLaMA 3.2 LLM model and BGE-m3 embedding model, enhancing multilingual text retrieval and translation accuracy.",
       "Integrated the BGE-m3 embedding model for efficient language-specific data processing and improved performance of the LLaMA 3.2 LLM in the Bhashini project.",
     ],
   },
   {
-    period: "May 2024 — Oct 2024",
+    period: "May 2024, Oct 2024",
     title: "AI/ML Engineer",
     company: "ThinkNovus Technologies Pvt. Ltd",
 
     points: [
-      "Delivered end-to-end AI/ML solutions for clients — from data exploration to model deployment.",
+      "Delivered end-to-end AI/ML solutions for clients, from data exploration to model deployment.",
       "Built RAG-based chatbots and LLM workflows tailored to client domains and document corpora.",
       "Developed web scraping pipelines, REST APIs, and automated data processing scripts.",
     ],
   },
   {
-    period: "Jan 2024 — April 2024",
+    period: "Jan 2024, April 2024",
     title: "AI/ML Intern",
     company: "Nettyfy Technologies",
     points: [
@@ -52,7 +52,7 @@ const roles = [
     ],
   },
   {
-    period: "Jul 2023 — Aug 2023",
+    period: "Jul 2023, Aug 2023",
     title: "Data Science Trainee",
     company: "Datavizz",
     points: [
@@ -83,7 +83,8 @@ function Experience() {
             <ul className="mt-4 space-y-2 text-ink/80 leading-relaxed max-w-2xl">
               {r.points.map((p, j) => (
                 <li key={j} className="flex gap-3">
-                  <span className="text-gold mt-2">—</span>
+                  <span className="text-gold mt-2">•</span>
+
                   <span>{p}</span>
                 </li>
               ))}

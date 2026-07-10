@@ -1,3 +1,4 @@
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 
 const links = [
@@ -10,12 +11,44 @@ const links = [
 ] as const;
 
 export function SiteNav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY || 0;
+      setScrolled(y > 90);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const vpStyle = useMemo(() => {
+    if (!scrolled) {
+      return {
+        opacity: 1,
+        visibility: "visible" as const,
+        transform: "scale(1)",
+        pointerEvents: "auto" as const,
+      };
+    }
+
+    return {
+      opacity: 0,
+      visibility: "hidden" as const,
+      transform: "scale(0.85)",
+      pointerEvents: "none" as const,
+    };
+  }, [scrolled]);
+
   return (
     <>
       {/* Top corner mark */}
       <Link
         to="/"
-        className="fixed top-6 right-6 z-50 font-display text-3xl font-semibold text-ink hover:text-gold transition-colors"
+        style={vpStyle}
+        className="fixed top-6 right-2 sm:right-4 z-30 select-none font-display text-2xl sm:text-3xl font-semibold text-ink hover:text-gold transition-colors transition-[opacity,transform,visibility] duration-350 ease-[cubic-bezier(0.2,0.8,0.2,1)]"
         aria-label="Home"
       >
         VP<span className="text-gold">.</span>

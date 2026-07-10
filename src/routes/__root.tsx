@@ -23,13 +23,13 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Vibhuti Patel — Data Science & AI/ML" },
-      { name: "description", content: "Portfolio of Vibhuti Patel — Data Science and AI/ML professional based in Ahmedabad, India." },
-      { property: "og:title", content: "Vibhuti Patel — Data Science & AI/ML" },
-      { property: "og:description", content: "Portfolio of Vibhuti Patel — Data Science and AI/ML professional based in Ahmedabad, India." },
+      { name: "description", content: "Portfolio of Vibhuti Patel, Data Science and AI/ML professional based in Ahmedabad, India." },
+      { property: "og:title", content: "Vibhuti Patel, Data Science & AI/ML" },
+      { property: "og:description", content: "Portfolio of Vibhuti Patel, Data Science and AI/ML professional based in Ahmedabad, India." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Vibhuti Patel — Data Science & AI/ML" },
-      { name: "twitter:description", content: "Portfolio of Vibhuti Patel — Data Science and AI/ML professional based in Ahmedabad, India." },
+      { name: "twitter:title", content: "Vibhuti Patel, Data Science & AI/ML" },
+      { name: "twitter:description", content: "Portfolio of Vibhuti Patel, Data Science and AI/ML professional based in Ahmedabad, India." },
 
     ],
     links: [

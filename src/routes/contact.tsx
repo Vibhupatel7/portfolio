@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Vibhuti Patel" },
-{ name: "description", content: "Get in touch with Vibhuti Patel — email, LinkedIn, Phone." },
-      { property: "og:title", content: "Contact — Vibhuti Patel" },
+      { title: "Contact, Vibhuti Patel" },
+{ name: "description", content: "Get in touch with Vibhuti Patel, email, LinkedIn, Phone." },
+{ property: "og:title", content: "Contact, Vibhuti Patel" },
 { property: "og:description", content: "Reach out via email, LinkedIn, or Phone." },
     ],
   }),
@@ -22,7 +22,7 @@ const channels = [
   },
   {
     label: "Phone",
-    value: "+91 97275 37625",
+    value: "+91 9727537625",
     href: "tel:+919727537625",
   },
   {
@@ -45,7 +45,8 @@ function Contact() {
       <Reveal delay={220}>
         <p className="mt-6 max-w-xl text-lg text-ink/70 leading-relaxed">
           Open to opportunities in Data Science, Machine Learning, and AI engineering.
-          Drop a message — I usually reply within a day.
+          Drop a message, and I usually reply within a day.
+
         </p>
       </Reveal>
 
@@ -73,7 +74,8 @@ function Contact() {
 
       <Reveal delay={400}>
         <p className="mt-20 text-center font-script text-2xl text-ink/60">
-          — keep flying —
+          Keep flying.
+
         </p>
       </Reveal>
     </main>

@@ -6,9 +6,9 @@ import portrait from "@/assets/vibhuti-patel.jpeg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Vibhuti Patel" },
-      { name: "description", content: "About Vibhuti Patel — Data Science and AI/ML professional from Ahmedabad." },
-      { property: "og:title", content: "About — Vibhuti Patel" },
+      { title: "About, Vibhuti Patel" },
+      { name: "description", content: "About Vibhuti Patel, Data Science and AI/ML professional from Ahmedabad." },
+      { property: "og:title", content: "About, Vibhuti Patel" },
       { property: "og:description", content: "Data Science and AI/ML professional from Ahmedabad." },
     ],
   }),
@@ -46,7 +46,8 @@ function About() {
         <div className="md:col-span-7">
           <Reveal delay={120}>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              Hello, world —
+              Hello, world,
+
             </p>
           </Reveal>
           <Reveal delay={200}>
@@ -61,14 +62,17 @@ function About() {
           <Reveal delay={320}>
             <div className="mt-10 grid gap-5 text-lg leading-relaxed text-ink/80 max-w-xl">
               <p>
-                Hello, I'm <span className="text-ink font-medium">Vibhuti</span> — a <span className="text-ink font-medium">Data Science &amp; AI/ML</span> practitioner based in Ahmedabad.
+                Hello, I'm <span className="text-ink font-medium">Vibhuti</span>, a <span className="text-ink font-medium">Data Science &amp; AI/ML</span> practitioner based in Ahmedabad.
+
               </p>
-              <p>
+                <p>
                 I specialize in building intelligent systems using <span className="text-ink font-medium">Natural Language Processing</span>, large language models, and <span className="text-ink font-medium">Generative AI</span>, with a strong focus on multilingual applications. My work centers around designing scalable solutions that can understand, retrieve, and generate meaningful information across diverse languages and domains.
               </p>
-              <p>
-                I enjoy working on end-to-end machine learning pipelines—from data preprocessing and model development to deployment—ensuring that systems are not just accurate, but also practical in real-world settings. I'm particularly interested in <span className="text-ink font-medium">Retrieval-Augmented Generation (RAG)</span>, Generative AI workflows, and emerging Agentic AI systems that combine reasoning, memory, and tool usage.
+
+                <p>
+                I enjoy working on end-to-end machine learning pipelines, from data preprocessing and model development to deployment, ensuring that systems are not just accurate, but also practical in real-world settings. I'm particularly interested in <span className="text-ink font-medium">Retrieval-Augmented Generation (RAG)</span>, Generative AI workflows, and emerging Agentic AI systems that combine reasoning, memory, and tool usage.
               </p>
+
               <p>
                 My goal is to build AI systems that go beyond static predictions—systems that can interact, adapt, and assist effectively across multilingual and low-resource environments.
               </p>

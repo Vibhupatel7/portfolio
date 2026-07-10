@@ -12,9 +12,9 @@ import projClassification from "@/assets/project-classification.jpg";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Vibhuti Patel" },
+      { title: "Projects, Vibhuti Patel" },
       { name: "description", content: "Selected Data Science and AI/ML projects by Vibhuti Patel." },
-      { property: "og:title", content: "Projects — Vibhuti Patel" },
+      { property: "og:title", content: "Projects, Vibhuti Patel" },
       { property: "og:description", content: "Selected Data Science and AI/ML projects." },
     ],
   }),
@@ -32,28 +32,28 @@ const projects = [
   {
     img: projVedic,
     name: "Vedic RAG Pipeline",
-    blurb: "A RAG-based rule extraction engine for Vedic astrology — combines a curated knowledge base with vector retrieval to surface contextual rules and interpretations.",
+    blurb: "A RAG-based rule extraction engine for Vedic astrology, combining a curated knowledge base with vector retrieval to surface contextual rules and interpretations.",
     tech: ["Python", "RAG", "LangChain", "Vector DB"],
     href: "https://github.com/Patelvibhuti/Vedic-Rag-Pipeline",
   },
   {
     img: projEatEase,
     name: "Eat Ease — Restaurant Chatbot",
-    blurb: "Conversational system streamlining menu browsing, ordering, and feedback — built with Flask, MongoDB, and FastText.",
+    blurb: "Conversational system streamlining menu browsing, ordering, and feedback, built with Flask, MongoDB, and FastText.",
     tech: ["Flask", "MongoDB", "FastText", "NLP"],
     href: "https://github.com/Patelvibhuti/Restaurant_Chatbot_Using_NLP",
   },
   {
     img: projTraffic,
     name: "Traffic Sign Classification",
-    blurb: "Deep learning model that classifies traffic sign images with high accuracy — supporting autonomous vehicle navigation systems.",
+    blurb: "Deep learning model that classifies traffic sign images with high accuracy, supporting autonomous vehicle navigation systems.",
     tech: ["TensorFlow", "Keras", "OpenCV", "CNN"],
     href: "https://github.com/Patelvibhuti",
   },
   {
     img: projClassification,
     name: "Breast Cancer Classification",
-    blurb: "Deep learning classifier on diagnostic features to predict malignancy — explored model architectures, regularization, and evaluation for medical decision support.",
+    blurb: "Deep learning classifier on diagnostic features to predict malignancy, exploring model architectures, regularization, and evaluation for medical decision support.",
     tech: ["TensorFlow", "Keras", "Scikit-learn", "Pandas"],
     href: "https://github.com/Patelvibhuti/breast-cancer-classification-deep-learning",
   },
