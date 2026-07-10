@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
+import "@/contact-mobile.css";
+
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
