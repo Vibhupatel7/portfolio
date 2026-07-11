@@ -137,9 +137,9 @@ function About() {
             <ul className="mt-4 space-y-3 text-ink/80">
               <li className="flex gap-3"><span className="text-gold">✦</span> Reading research papers with chai ☕</li>
               <li className="flex gap-3"><span className="text-gold">✦</span> Exploring multilingual and Indic language datasets</li>
-              <li className="flex gap-3"><span className="text-gold">✦</span> Drawing — visualizing ideas and concepts</li>
-              <li className="flex gap-3"><span className="text-gold">✦</span> Traveling — observing languages, cultures, and human behavior</li>
-              <li className="flex gap-3"><span className="text-gold">✦</span> Enjoying nature — where I slow down and think deeply</li>
+              <li className="flex gap-3"><span className="text-gold">✦</span> Drawing visualizing ideas and concepts</li>
+              <li className="flex gap-3"><span className="text-gold">✦</span> Traveling, observing languages, cultures, and human behavior</li>
+              <li className="flex gap-3"><span className="text-gold">✦</span> Enjoying nature, where I slow down and think deeply</li>
               <li className="flex gap-3"><span className="text-gold">✦</span> Finding clarity in nature and quiet thinking</li>
             </ul>
           </div>
