@@ -1,10 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
+import { Mail, Phone, Linkedin } from "lucide-react";
 import "@/contact-mobile.css";
+import "@/contact-icon.css";
 
 
 export const Route = createFileRoute("/contact")({
+
+
   head: () => ({
     meta: [
       { title: "Contact, Vibhuti Patel" },
@@ -18,26 +22,27 @@ export const Route = createFileRoute("/contact")({
 
 const channels = [
   {
-    label: "Email",
     value: "vibhupatel.002@gmail.com",
     href: "mailto:vibhupatel.002@gmail.com",
+    Icon: Mail,
   },
   {
-    label: "Phone",
     value: "+91 9727537625",
     href: "tel:+919727537625",
+    Icon: Phone,
   },
   {
-    label: "LinkedIn",
     value: "vibhuti-patel",
     href: "https://www.linkedin.com/in/vibhuti-patel-5357b920a/",
+    Icon: Linkedin,
   },
-
 ];
+
 
 function Contact() {
   return (
     <main className="mx-auto min-h-screen max-w-4xl px-6 py-32">
+
       <Reveal><SectionLabel>Contact</SectionLabel></Reveal>
       <Reveal delay={120}>
         <h1 className="mt-6 font-display text-5xl md:text-7xl text-ink leading-[1.05]">
@@ -54,7 +59,8 @@ function Contact() {
 
       <div className="mt-16 grid gap-px bg-border rounded-2xl overflow-hidden">
         {channels.map((c, i) => (
-          <Reveal key={c.label} delay={i * 100}>
+          <Reveal key={c.value} delay={i * 100}>
+
             <a
               href={c.href}
               target={c.href.startsWith("http") ? "_blank" : undefined}
@@ -62,14 +68,21 @@ function Contact() {
               className="relative flex items-center justify-between bg-background px-8 py-6 hover:bg-card/80 transition-all group overflow-hidden"
             >
               <span className="absolute left-0 top-0 h-full w-0 bg-gold/10 transition-all duration-500 group-hover:w-full" />
-              <span className="relative font-mono text-xs uppercase tracking-widest text-muted-foreground">
-                {c.label}
+
+              <span className="relative flex items-center justify-center text-[#0B5A57] group-hover:text-[#D9A441] transition-colors">
+                <c.Icon className="contact-icon" aria-hidden="true" />
               </span>
-              <span className="relative font-display text-xl md:text-2xl text-ink group-hover:text-gold transition-colors">
+
+
+              <span className="relative flex-1 font-display text-xl md:text-2xl text-ink group-hover:text-gold transition-colors text-center">
                 {c.value}
-                <span className="ml-2 text-base inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              </span>
+
+              <span className="relative ml-4 text-base inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 text-ink group-hover:text-gold">
+                ↗
               </span>
             </a>
+
           </Reveal>
         ))}
       </div>

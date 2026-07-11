@@ -39,12 +39,15 @@
     display: block;
   }
 
-  /* Label */
+  /* Icon */
   main.mx-auto.min-h-screen.max-w-4xl.px-6.py-32
     > div.mt-16.grid.gap-px.bg-border.rounded-2xl.overflow-hidden
-    > a > span.relative.font-mono.text-xs.uppercase.tracking-widest.text-muted-foreground {
-    font-size: clamp(10px, 2vw, 12px) !important;
+    > a > span.relative.flex.items-center.justify-center.text-\[\#0B5A57\].group-hover\:text-\[\#D9A441\].transition-colors
+    > svg.contact-icon {
+    width: clamp(18px, 4vw, 20px) !important;
+    height: clamp(18px, 4vw, 20px) !important;
   }
+
 
   /* Value */
   main.mx-auto.min-h-screen.max-w-4xl.px-6.py-32
